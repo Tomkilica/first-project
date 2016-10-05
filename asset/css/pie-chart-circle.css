@@ -1,0 +1,1474 @@
+
+.chart {
+  position: absolute;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 12px solid #000;
+  opacity: 0.5;
+  border-radius: 100px;
+  line-height: 50px;
+}
+.percents {
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    top: 0;   
+
+}
+.percents p {
+  text-align: center;
+  margin-top: 64px;
+}
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:174px;
+  height:174px;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #b80505;
+  stroke-width: 12;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+/*.chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+}
+
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 401;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}*/
+
+.chart[data-percent='1'] .outer {
+  stroke-dashoffset: 530;
+  -webkit-animation: show1 2s;
+  animation: show1 2s;
+}
+.chart[data-percent='2'] .outer {
+  stroke-dashoffset: 527;
+  -webkit-animation: show2 2s;
+  animation: show2 2s;
+}
+.chart[data-percent='3'] .outer {
+  stroke-dashoffset: 522;
+  -webkit-animation: show3 2s;
+  animation: show3 2s;
+}
+.chart[data-percent='4'] .outer {
+  stroke-dashoffset: 517;
+  -webkit-animation: show4 2s;
+  animation: show4 2s;
+}
+.chart[data-percent='5'] .outer {
+  stroke-dashoffset: 512;
+  -webkit-animation: show5 2s;
+  animation: show5 2s;
+}
+.chart[data-percent='6'] .outer {
+  stroke-dashoffset: 507;
+  -webkit-animation: show6 2s;
+  animation: show6 2s;
+}
+.chart[data-percent='7'] .outer {
+  stroke-dashoffset: 502;
+  -webkit-animation: show7 2s;
+  animation: show7 2s;
+}
+.chart[data-percent='8'] .outer {
+  stroke-dashoffset: 497;
+  -webkit-animation: show8 2s;
+  animation: show8 2s;
+}
+.chart[data-percent='9'] .outer {
+  stroke-dashoffset: 492;
+  -webkit-animation: show9 2s;
+  animation: show9 2s;
+}
+.chart[data-percent='10'] .outer {
+  stroke-dashoffset: 487;
+  -webkit-animation: show10 2s;
+  animation: show10 2s;
+}
+.chart[data-percent='11'] .outer {
+  stroke-dashoffset: 482;
+  -webkit-animation: show11 2s;
+  animation: show11 2s;
+}
+.chart[data-percent='12'] .outer {
+  stroke-dashoffset: 477;
+  -webkit-animation: show12 2s;
+  animation: show12 2s;
+}
+.chart[data-percent='13'] .outer {
+  stroke-dashoffset: 472;
+  -webkit-animation: show13 2s;
+  animation: show13 2s;
+}
+.chart[data-percent='14'] .outer {
+  stroke-dashoffset: 467;
+  -webkit-animation: show14 2s;
+  animation: show14 2s;
+}
+.chart[data-percent='15'] .outer {
+  stroke-dashoffset: 462;
+  -webkit-animation: show15 2s;
+  animation: show15 2s;
+}
+.chart[data-percent='15'] .outer {
+  stroke-dashoffset: 462;
+  -webkit-animation: show15 2s;
+  animation: show15 2s;
+}
+.chart[data-percent='16'] .outer {
+  stroke-dashoffset: 457;
+  -webkit-animation: show16 2s;
+  animation: show16 2s;
+}
+
+.chart[data-percent='17'] .outer {
+  stroke-dashoffset: 452;
+  -webkit-animation: show17 2s;
+  animation: show17 2s;
+}
+.chart[data-percent='18'] .outer {
+  stroke-dashoffset: 447;
+  -webkit-animation: show18 2s;
+  animation: show18 2s;
+}
+.chart[data-percent='19'] .outer {
+  stroke-dashoffset: 442;
+  -webkit-animation: show19 2s;
+  animation: show19 2s;
+}
+.chart[data-percent='20'] .outer {
+  stroke-dashoffset: 437;
+  -webkit-animation: show20 2s;
+  animation: show20 2s;
+}
+.chart[data-percent='21'] .outer {
+  stroke-dashoffset: 432;
+  -webkit-animation: show21 2s;
+  animation: show21 2s;
+}
+.chart[data-percent='22'] .outer {
+  stroke-dashoffset: 427;
+  -webkit-animation: show22 2s;
+  animation: show22 2s;
+}
+.chart[data-percent='23'] .outer {
+  stroke-dashoffset: 422;
+  -webkit-animation: show23 2s;
+  animation: show23 2s;
+}
+.chart[data-percent='24'] .outer {
+  stroke-dashoffset: 417;
+  -webkit-animation: show24 2s;
+  animation: show24 2s;
+}
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 412;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}
+.chart[data-percent='26'] .outer {
+  stroke-dashoffset: 407;
+  -webkit-animation: show26 2s;
+  animation: show26 2s;
+}
+.chart[data-percent='27'] .outer {
+  stroke-dashoffset: 402;
+  -webkit-animation: show27 2s;
+  animation: show27 2s;
+}
+.chart[data-percent='28'] .outer {
+  stroke-dashoffset: 397;
+  -webkit-animation: show28 2s;
+  animation: show28 2s;
+}
+.chart[data-percent='29'] .outer {
+  stroke-dashoffset: 392;
+  -webkit-animation: show29 2s;
+  animation: show29 2s;
+}
+.chart[data-percent='30'] .outer {
+  stroke-dashoffset: 387;
+  -webkit-animation: show30 2s;
+  animation: show30 2s;
+}
+.chart[data-percent='31'] .outer {
+  stroke-dashoffset: 382;
+  -webkit-animation: show31 2s;
+  animation: show31 2s;
+}
+.chart[data-percent='32'] .outer {
+  stroke-dashoffset: 377;
+  -webkit-animation: show32 2s;
+  animation: show32 2s;
+}
+.chart[data-percent='33'] .outer {
+  stroke-dashoffset: 372;
+  -webkit-animation: show33 2s;
+  animation: show33 2s;
+}
+.chart[data-percent='34'] .outer {
+  stroke-dashoffset: 367;
+  -webkit-animation: show34 2s;
+  animation: show34 2s;
+}
+.chart[data-percent='35'] .outer {
+  stroke-dashoffset: 362;
+  -webkit-animation: show35 2s;
+  animation: show35 2s;
+}
+.chart[data-percent='36'] .outer {
+  stroke-dashoffset: 357;
+  -webkit-animation: show36 2s;
+  animation: show36 2s;
+}
+.chart[data-percent='37'] .outer {
+  stroke-dashoffset: 352;
+  -webkit-animation: show37 2s;
+  animation: show37 2s;
+}
+.chart[data-percent='38'] .outer {
+  stroke-dashoffset: 347;
+  -webkit-animation: show38 2s;
+  animation: show38 2s;
+}
+.chart[data-percent='39'] .outer {
+  stroke-dashoffset: 342;
+  -webkit-animation: show39 2s;
+  animation: show39 2s;
+}
+.chart[data-percent='40'] .outer {
+  stroke-dashoffset: 337;
+  -webkit-animation: show40 2s;
+  animation: show40 2s;
+}
+.chart[data-percent='41'] .outer {
+  stroke-dashoffset: 332;
+  -webkit-animation: show41 2s;
+  animation: show41 2s;
+}
+.chart[data-percent='42'] .outer {
+  stroke-dashoffset: 327;
+  -webkit-animation: show42 2s;
+  animation: show42 2s;
+}
+.chart[data-percent='43'] .outer {
+  stroke-dashoffset: 322;
+  -webkit-animation: show43 2s;
+  animation: show43 2s;
+}
+.chart[data-percent='44'] .outer {
+  stroke-dashoffset: 317;
+  -webkit-animation: show44 2s;
+  animation: show44 2s;
+}
+.chart[data-percent='45'] .outer {
+  stroke-dashoffset: 312;
+  -webkit-animation: show45 2s;
+  animation: show45 2s;
+}
+.chart[data-percent='46'] .outer {
+  stroke-dashoffset: 307;
+  -webkit-animation: show46 2s;
+  animation: show46 2s;
+}
+.chart[data-percent='47'] .outer {
+  stroke-dashoffset: 302;
+  -webkit-animation: show47 2s;
+  animation: show47 2s;
+}
+.chart[data-percent='48'] .outer {
+  stroke-dashoffset: 297;
+  -webkit-animation: show48 2s;
+  animation: show48 2s;
+}
+.chart[data-percent='49'] .outer {
+  stroke-dashoffset: 292;
+  -webkit-animation: show49 2s;
+  animation: show49 2s;
+}
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 280;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+  }
+  .chart[data-percent='51'] .outer {
+  stroke-dashoffset: 262;
+  -webkit-animation: show51 2s;
+  animation: show51 2s;
+  }
+  .chart[data-percent='52'] .outer {
+  stroke-dashoffset: 257;
+  -webkit-animation: show52 2s;
+  animation: show52 2s;
+  }
+  .chart[data-percent='53'] .outer {
+  stroke-dashoffset: 252;
+  -webkit-animation: show53 2s;
+  animation: show53 2s;
+  }
+  .chart[data-percent='54'] .outer {
+  stroke-dashoffset: 247;
+  -webkit-animation: show54 2s;
+  animation: show54 2s;
+  }
+  .chart[data-percent='55'] .outer {
+  stroke-dashoffset: 242;
+  -webkit-animation: show55 2s;
+  animation: show55 2s;
+  }
+  .chart[data-percent='56'] .outer {
+  stroke-dashoffset: 237;
+  -webkit-animation: show56 2s;
+  animation: show56 2s;
+  }
+  .chart[data-percent='57'] .outer {
+  stroke-dashoffset: 232;
+  -webkit-animation: show57 2s;
+  animation: show57 2s;
+  }
+  .chart[data-percent='58'] .outer {
+  stroke-dashoffset: 227;
+  -webkit-animation: show58 2s;
+  animation: show58 2s;
+  }
+  .chart[data-percent='59'] .outer {
+  stroke-dashoffset: 222;
+  -webkit-animation: show59 2s;
+  animation: show59 2s;
+  }
+  .chart[data-percent='60'] .outer {
+  stroke-dashoffset: 217;
+  -webkit-animation: show60 2s;
+  animation: show60 2s;
+  }
+  .chart[data-percent='61'] .outer {
+  stroke-dashoffset: 212;
+  -webkit-animation: show61 2s;
+  animation: show61 2s;
+  }
+  .chart[data-percent='62'] .outer {
+  stroke-dashoffset: 207;
+  -webkit-animation: show62 2s;
+  animation: show62 2s;
+  }
+  .chart[data-percent='63'] .outer {
+  stroke-dashoffset: 202;
+  -webkit-animation: show63 2s;
+  animation: show63 2s;
+  }
+  .chart[data-percent='64'] .outer {
+  stroke-dashoffset: 197;
+  -webkit-animation: show64 2s;
+  animation: show64 2s;
+  }
+  .chart[data-percent='65'] .outer {
+  stroke-dashoffset: 192;
+  -webkit-animation: show65 2s;
+  animation: show65 2s;
+  }
+  .chart[data-percent='66'] .outer {
+  stroke-dashoffset: 187;
+  -webkit-animation: show66 2s;
+  animation: show66 2s;
+  }
+  .chart[data-percent='67'] .outer {
+  stroke-dashoffset: 182;
+  -webkit-animation: show67 2s;
+  animation: show67 2s;
+  }
+  .chart[data-percent='68'] .outer {
+  stroke-dashoffset: 177;
+  -webkit-animation: show68 2s;
+  animation: show68 2s;
+  }
+  .chart[data-percent='69'] .outer {
+  stroke-dashoffset: 172;
+  -webkit-animation: show69 2s;
+  animation: show69 2s;
+  }
+  .chart[data-percent='70'] .outer {
+  stroke-dashoffset: 167;
+  -webkit-animation: show70 2s;
+  animation: show70 2s;
+  }
+  .chart[data-percent='71'] .outer {
+  stroke-dashoffset: 162;
+  -webkit-animation: show71 2s;
+  animation: show71 2s;
+  }
+  .chart[data-percent='72'] .outer {
+  stroke-dashoffset: 157;
+  -webkit-animation: show72 2s;
+  animation: show72 2s;
+  }
+  .chart[data-percent='73'] .outer {
+  stroke-dashoffset: 152;
+  -webkit-animation: show73 2s;
+  animation: show73 2s;
+  }
+  .chart[data-percent='74'] .outer {
+  stroke-dashoffset: 147;
+  -webkit-animation: show74 2s;
+  animation: show74 2s;
+  }
+  .chart[data-percent='75'] .outer {
+  stroke-dashoffset: 144;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+  }
+  .chart[data-percent='76'] .outer {
+  stroke-dashoffset: 137;
+  -webkit-animation: show76 2s;
+  animation: show76 2s;
+  }
+  .chart[data-percent='77'] .outer {
+  stroke-dashoffset: 132;
+  -webkit-animation: show77 2s;
+  animation: show77 2s;
+  }
+  .chart[data-percent='78'] .outer {
+  stroke-dashoffset: 127;
+  -webkit-animation: show78 2s;
+  animation: show78 2s;
+  }
+  .chart[data-percent='79'] .outer {
+  stroke-dashoffset: 122;
+  -webkit-animation: show79 2s;
+  animation: show79 2s;
+  }
+  .chart[data-percent='80'] .outer {
+  stroke-dashoffset: 117;
+  -webkit-animation: show80 2s;
+  animation: show80 2s;
+  }
+  .chart[data-percent='81'] .outer {
+  stroke-dashoffset: 112;
+  -webkit-animation: show81 2s;
+  animation: show81 2s;
+  }
+  .chart[data-percent='82'] .outer {
+  stroke-dashoffset: 107;
+  -webkit-animation: show82 2s;
+  animation: show82 2s;
+  }
+  .chart[data-percent='83'] .outer {
+  stroke-dashoffset: 102;
+  -webkit-animation: show83 2s;
+  animation: show83 2s;
+  }
+  .chart[data-percent='84'] .outer {
+  stroke-dashoffset: 97;
+  -webkit-animation: show84 2s;
+  animation: show84 2s;
+  }
+  .chart[data-percent='85'] .outer {
+  stroke-dashoffset: 92;
+  -webkit-animation: show85 2s;
+  animation: show85 2s;
+  }
+  .chart[data-percent='86'] .outer {
+  stroke-dashoffset: 87;
+  -webkit-animation: show86 2s;
+  animation: show86 2s;
+  }
+  .chart[data-percent='87'] .outer {
+  stroke-dashoffset: 82;
+  -webkit-animation: show87 2s;
+  animation: show87 2s;
+  }
+  .chart[data-percent='88'] .outer {
+  stroke-dashoffset: 77;
+  -webkit-animation: show88 2s;
+  animation: show88 2s;
+  }
+  .chart[data-percent='89'] .outer {
+  stroke-dashoffset: 72;
+  -webkit-animation: show89 2s;
+  animation: show89 2s;
+  }
+  .chart[data-percent='90'] .outer {
+  stroke-dashoffset: 67;
+  -webkit-animation: show90 2s;
+  animation: show90 2s;
+  }
+  .chart[data-percent='91'] .outer {
+  stroke-dashoffset: 62;
+  -webkit-animation: show91 2s;
+  animation: show91 2s;
+  }
+  .chart[data-percent='92'] .outer {
+  stroke-dashoffset: 57;
+  -webkit-animation: show92 2s;
+  animation: show92 2s;
+  }
+  .chart[data-percent='93'] .outer {
+  stroke-dashoffset: 52;
+  -webkit-animation: show93 2s;
+  animation: show93 2s;
+  }
+  .chart[data-percent='94'] .outer {
+  stroke-dashoffset: 47;
+  -webkit-animation: show94 2s;
+  animation: show94 2s;
+  }
+  .chart[data-percent='95'] .outer {
+  stroke-dashoffset: 42;
+  -webkit-animation: show95 2s;
+  animation: show95 2s;
+  }
+  .chart[data-percent='96'] .outer {
+  stroke-dashoffset: 37;
+  -webkit-animation: show96 2s;
+  animation: show96 2s;
+  }
+  .chart[data-percent='97'] .outer {
+  stroke-dashoffset: 32;
+  -webkit-animation: show97 2s;
+  animation: show97 2s;
+  }
+  .chart[data-percent='98'] .outer {
+  stroke-dashoffset: 30;
+  -webkit-animation: show98 2s;
+  animation: show98 2s;
+  }
+  .chart[data-percent='99'] .outer {
+  stroke-dashoffset: 28;
+  -webkit-animation: show99 2s;
+  animation: show99 2s;
+  }
+  .chart[data-percent='99'] .outer {
+  stroke-dashoffset: 28;
+  -webkit-animation: show99 2s;
+  animation: show99 2s;
+  }
+  .chart[data-percent='100'] .outer {
+  stroke-dashoffset: 26;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  }
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+/*@-webkit-keyframes show100 {*/
+/*  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 124;
+  }
+}
+
+@-webkit-keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@-webkit-keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+
+@keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}*/
+@-webkit-keyframes show1 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 532;}
+}
+@keyframes show1 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 532;}
+}
+@-webkit-keyframes show2 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 527;}
+}
+@keyframes show2 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 527;}
+}
+@-webkit-keyframes show3 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 522;}
+}
+@keyframes show3 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 522;}
+}
+@-webkit-keyframes show4 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 517;}
+}
+@keyframes show4 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 517;}
+}
+@-webkit-keyframes show5 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 512;}
+}
+@keyframes show5 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 512;}
+}
+@-webkit-keyframes show6 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 507;}
+}
+@keyframes show6 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 507;}
+}
+@-webkit-keyframes show7 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 502;}
+}
+@keyframes show7 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 502;}
+}
+@-webkit-keyframes show8 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 497;}
+}
+@keyframes show8 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 497;}
+}
+@-webkit-keyframes show9 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 492;}
+}
+@keyframes show9 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 492;}
+}
+@-webkit-keyframes show10 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 487;}
+}
+@keyframes show10 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 487;}
+}
+@-webkit-keyframes show11 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 482;}
+}
+@keyframes show11 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 482;}
+}
+@-webkit-keyframes show12 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 477;}
+}
+@keyframes show12 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 477;}
+}
+@-webkit-keyframes show13 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 472;}
+}
+@keyframes show13 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 472;}
+}
+@-webkit-keyframes show14 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 467;}
+}
+@keyframes show14 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 467;}
+}
+@-webkit-keyframes show15 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 462;}
+}
+@keyframes show15 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 462;}
+}
+@-webkit-keyframes show16 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 457;}
+}
+@keyframes show16 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 457;}
+}
+@-webkit-keyframes show17 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 452;}
+}
+@keyframes show17 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 452;}
+}
+@-webkit-keyframes show18 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 447;}
+}
+@keyframes show18 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 447;}
+}
+@-webkit-keyframes show19 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 442;}
+}
+@keyframes show19 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 442;}
+}
+@-webkit-keyframes show20 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 437;}
+}
+@keyframes show20 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 437;}
+}
+@-webkit-keyframes show21 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 432;}
+}
+@keyframes show21 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 432;}
+}
+@-webkit-keyframes show22 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 427;}
+}
+@keyframes show22 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 427;}
+}
+@-webkit-keyframes show23 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 422;}
+}
+@keyframes show23 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 422;}
+}
+@-webkit-keyframes show24 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 417;}
+}
+@keyframes show24 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 417;}
+}
+@-webkit-keyframes show25 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 412;}
+}
+@keyframes show25 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 412;}
+}
+@-webkit-keyframes show26 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 407;}
+}
+@keyframes show26 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 407;}
+}
+@-webkit-keyframes show27 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 402;}
+}
+@keyframes show27 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 402;}
+}
+@-webkit-keyframes show28 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 397;}
+}
+@keyframes show28 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 397;}
+}
+@-webkit-keyframes show29 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 392;}
+}
+@keyframes show29 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 392;}
+}
+@-webkit-keyframes show30 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 387;}
+}
+@keyframes show30 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 387;}
+}
+@-webkit-keyframes show31 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 382;}
+}
+@keyframes show31 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 382;}
+}
+@-webkit-keyframes show32 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 377;}
+}
+@keyframes show32 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 377;}
+}
+@-webkit-keyframes show33 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 372;}
+}
+@keyframes show33 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 372;}
+}
+@-webkit-keyframes show34 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 367;}
+}
+@keyframes show34 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 367;}
+}
+@-webkit-keyframes show35 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 362;}
+}
+@keyframes show35 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 362;}
+}
+@-webkit-keyframes show36 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 357;}
+}
+@keyframes show36 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 357;}
+}
+@-webkit-keyframes show37 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 352;}
+}
+@keyframes show37 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 352;}
+}
+@-webkit-keyframes show38 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 347;}
+}
+@keyframes show38 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 347;}
+}
+@-webkit-keyframes show39 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 342;}
+}
+@keyframes show39 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 342;}
+}
+@-webkit-keyframes show40 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 337;}
+}
+@keyframes show40 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 337;}
+}
+@-webkit-keyframes show41 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 332;}
+}
+@keyframes show41 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 332;}
+}
+@-webkit-keyframes show42 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 327;}
+}
+@keyframes show42 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 327;}
+}
+@-webkit-keyframes show43 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 322;}
+}
+@keyframes show43 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 322;}
+}
+@-webkit-keyframes show44 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 317;}
+}
+@keyframes show44 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 317;}
+}
+@-webkit-keyframes show45 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 312;}
+}
+@keyframes show45 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 312;}
+}
+@-webkit-keyframes show46 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 307;}
+}
+@keyframes show46 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 307;}
+}
+@-webkit-keyframes show47 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 302;}
+}
+@keyframes show47 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 302;}
+}
+@-webkit-keyframes show48 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 297;}
+}
+@keyframes show48 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 297;}
+}
+@-webkit-keyframes show49 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 292;}
+}
+@keyframes show49 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 292;}
+}
+@-webkit-keyframes show50 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 280;}
+}
+@keyframes show50 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 280;}
+}
+@-webkit-keyframes show51 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 262;}
+}
+@keyframes show51 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 262;}
+}
+@-webkit-keyframes show52 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 257;}
+}
+@keyframes show52 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 257;}
+}
+@-webkit-keyframes show53 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 252;}
+}
+@keyframes show53 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 252;}
+}
+@-webkit-keyframes show54 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 247;}
+}
+@keyframes show54 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 247;}
+}
+@-webkit-keyframes show55 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 242;}
+}
+@keyframes show55 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 242;}
+}
+@-webkit-keyframes show56 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 237;}
+}
+@keyframes show56 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 237;}
+}
+@-webkit-keyframes show57 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 232;}
+}
+@keyframes show57 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 232;}
+}
+@-webkit-keyframes show58 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 227;}
+}
+@keyframes show58 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 227;}
+}
+@-webkit-keyframes show59 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 222;}
+}
+@keyframes show59 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 222;}
+}
+@-webkit-keyframes show60 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 217;}
+}
+@keyframes show60 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 217;}
+}
+@-webkit-keyframes show61 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 212;}
+}
+@keyframes show61 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 212;}
+}
+@-webkit-keyframes show62 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 207;}
+}
+@keyframes show62 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 207;}
+}
+@-webkit-keyframes show63 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 202;}
+}
+@keyframes show63 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 202;}
+}
+@-webkit-keyframes show64 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 197;}
+}
+@keyframes show64 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 197;}
+}
+@-webkit-keyframes show65 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 192;}
+}
+@keyframes show65 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 192;}
+}
+@-webkit-keyframes show66 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 187;}
+}
+@keyframes show66 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 187;}
+}
+@-webkit-keyframes show67 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 182;}
+}
+@keyframes show67 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 182;}
+}
+@-webkit-keyframes show68 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 177;}
+}
+@keyframes show68 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 177;}
+}
+@-webkit-keyframes show69 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 172;}
+}
+@keyframes show69 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 172;}
+}
+@-webkit-keyframes show70 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 167;}
+}
+@keyframes show70 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 167;}
+}
+@-webkit-keyframes show71 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 162;}
+}
+@keyframes show71 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 162;}
+}
+@-webkit-keyframes show72 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 157;}
+}
+@keyframes show72 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 157;}
+}
+@-webkit-keyframes show73 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 152;}
+}
+@keyframes show73 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 152;}
+}
+@-webkit-keyframes show74 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 147;}
+}
+@keyframes show74 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 147;}
+}
+@-webkit-keyframes show75 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 144;}
+}
+@keyframes show75 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 144;}
+}
+@-webkit-keyframes show76 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 137;}
+}
+@keyframes show76 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 137;}
+}
+@-webkit-keyframes show77 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 132;}
+}
+@keyframes show77 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 132;}
+}
+
+@-webkit-keyframes show78 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 127;}
+}
+@keyframes show78 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 127;}
+}
+@-webkit-keyframes show79 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 122;}
+}
+@keyframes show79 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 122;}
+}
+@-webkit-keyframes show80 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 117;}
+}
+@keyframes show80 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 117;}
+}
+@-webkit-keyframes show81 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 112;}
+}
+@keyframes show81 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 112;}
+}
+@-webkit-keyframes show82 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 107;}
+}
+@keyframes show82 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 107;}
+}
+@-webkit-keyframes show83 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 102;}
+}
+@keyframes show83 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 102;}
+}
+@-webkit-keyframes show84 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 97;}
+}
+@keyframes show84 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 97;}
+}
+@-webkit-keyframes show85 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 92;}
+}
+@keyframes show85 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 92;}
+}
+@-webkit-keyframes show86 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 87;}
+}
+@keyframes show86 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 87;}
+}
+@-webkit-keyframes show87 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 82;}
+}
+@keyframes show87 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 82;}
+}
+@-webkit-keyframes show88 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 77;}
+}
+@keyframes show88 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 77;}
+}
+@-webkit-keyframes show89 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 72;}
+}
+@keyframes show89 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 72;}
+}
+@-webkit-keyframes show90 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 67;}
+}
+@keyframes show90 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 67;}
+}
+@-webkit-keyframes show91 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 62;}
+}
+@keyframes show91 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 62;}
+}
+@-webkit-keyframes show92 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 57;}
+}
+@keyframes show92 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 57;}
+}
+@-webkit-keyframes show93 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 52;}
+}
+@keyframes show93 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 52;}
+}
+@-webkit-keyframes show94 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 47;}
+}
+@keyframes show94 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 47;}
+}
+@-webkit-keyframes show95 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 42;}
+}
+@keyframes show95 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 42;}
+}
+@-webkit-keyframes show96 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 37;}
+}
+@keyframes show96 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 37;}
+}
+@-webkit-keyframes show97 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 32;}
+}
+@keyframes show97 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 32;}
+}
+@-webkit-keyframes show98 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 30;}
+}
+@keyframes show98 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 30;}
+}
+@-webkit-keyframes show99 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 28;}
+}
+@keyframes show99 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 28;}
+}
+}-webkit-keyframes show100 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 26;}
+}
+@keyframes show100 {
+  from {stroke-dashoffset: 537;}
+  to {stroke-dashoffset: 26;}
+}

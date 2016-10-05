@@ -1,0 +1,844 @@
+body {
+	margin:0;
+}
+/*ovde pocinje header element*/
+header {
+	position: relative;
+	height: 73px;
+	width: 100%;
+	background-color: #000;
+	border-bottom: 1px solid #b80505;
+	opacity: 0.8;
+	z-index: 9999;
+}
+
+.home-logo {
+    width: 50%;
+    float: left;
+}
+.home-logo img {
+	padding-left: 27px;
+	padding-top: 5px;
+}
+.home-menu-box img {
+	position: absolute;
+	right: -58px;
+    top: 30px;
+}
+
+.home-menu-box {
+   	width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    right: 138px;
+}
+
+.home-menu{
+    float: right;
+    margin: 0;
+    line-height: 78px;
+}
+
+li > ul {
+	display: none;
+    padding: 0;
+   	position: absolute;
+   	top: 74px;
+}
+
+
+li:hover > ul {
+	display: block;
+
+}
+.home-menu li:hover > a {
+	background-color: transparent;
+	color: #b80505;
+}
+.home-menu li:hover ul li ul {
+	border-top: none;
+}
+.home-menu li:hover > ul {
+	border-top: 5px solid #b80505;
+
+}
+
+li {
+	list-style-type: none;
+}
+.home-menu ul li ul {
+	top: -1px;
+    right: -242px;
+}
+
+.home-menu ul li {
+	position: relative;
+}
+li ul li {
+	background-color: #191919;
+    width: 223px;
+    height: 47px;
+    border-top: 1px solid #2a2a2a;    
+    padding-left: 20px;
+    text-align: left;  
+    line-height: 53px;
+
+}
+.home-menu li ul li a {
+	font-size: 15px;
+	letter-spacing: 1px;
+	overflow: hidden;
+}
+.home-menu > li {
+	float: left;
+	list-style-type: none;
+	padding-right: 17px;
+}
+.home-menu > li a {
+	color: #ffffff;
+    text-decoration: none;
+    padding-right: 18px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+/*ovde se zavrsava heading element*/
+/*ovde pocinje slider element*/
+.slider-element {
+	width: 100%;
+	height: 1080px;
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+	
+}
+.slider-box {
+	width: 1100px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -550px;
+}
+.slider-title-box {
+	width: 776px;
+	height: 130px;
+	position: relative;
+    top: 300px;
+    margin: auto;
+}
+.slider-title-opacity {
+	opacity: 0.7;
+    background-color: #191919;
+    height: 100%;
+    width: 100%;
+}
+.slider-title {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.slider-title p {
+	font-size: 53px;
+    color: #b80505;
+    text-align: center;
+    padding-top: 37px;
+    margin: 0;;
+}
+.slider-text {
+	height: 122px;
+    width: 84%;
+    margin: 0 8%;
+    position: absolute;
+    top: 483px;
+    overflow: hidden;
+}
+.slider-text p {
+	font-size: 27px;
+	text-align: center;
+	color: #f5f5f5;
+
+}
+.slider-button {
+	width: 100%;
+	height: 72px;
+	position: absolute;
+	top: 682px;
+}
+.slider-button1 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.slider-button1 a {
+	background-color: #b80505;
+    color: #ffffff;
+    text-decoration: none;    
+    margin: 0 auto;    
+    padding: 16px 39px;    
+    letter-spacing: 1px;
+    font-size: 27px;
+    border: none;    
+    outline: none;
+    position: absolute;
+    right: 53%;
+    width: 162px;
+    height: 38px;
+    text-align: center;
+	
+
+}
+.slider-button2 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.slider-button2 a {
+	opacity: 0.7;
+    background-color: #191919;
+    color: #ffffff;
+    text-decoration: none;    
+    margin: 0 auto;    
+    padding: 16px 39px;    
+    letter-spacing: 1px;
+    font-size: 27px;
+    border: 1px solid #b80505;    
+    outline: none;
+    position: absolute;
+    width: 162px;
+    height: 38px;
+    text-align: center;
+   
+}
+
+.slider-button2 a:hover {
+	opacity: 0.7;
+    background-color: #191919;
+}
+
+
+/*ovde pocinje project element*/
+.red-line {
+	width: 100%;
+	height: 9px;
+	background-color: #b80505;
+}
+.project-element {
+	width: 100%;
+	height:714px;
+}
+.project-box {
+	width: 1100px;
+    height: 705px;
+    margin: auto;
+}
+.project-title {
+	width: 100%;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 101px;
+	padding-bottom: 15px;
+	margin:0;
+}
+.project-text {
+	width: 100%;
+	color: #838383;
+	font-size: 20px;
+	line-height: 21px;
+	text-align: center;	
+    padding-bottom: 78px;
+}
+[class^="heading-project"] {
+	width: 24.8%;
+	height: 54px;
+	border-width: 5px 1px 1px 1px;
+    border-style: solid;
+    border-color: #2a2a2a;
+	background-color: #191919;
+	float: left;
+}
+[class^="heading-project"] p {
+	font-size: 20px;
+	color: #dfdfdf;
+	text-align: center;
+	margin: 0;
+    letter-spacing: 1px;
+    line-height: 48px;
+}
+.project-description {
+	position: relative;
+	height: 240px;
+	width: 1097px;	
+	border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #2a2a2a;
+    float: left;
+
+}
+.project-description2,
+.project-description3,
+.project-description4 {
+	display: none;
+}
+.project-description-text {
+	height: 100%;
+	width: 50%;
+	text-align: left;
+	background-color: #191919;
+	float: left;
+}
+.project-description-text p:first-child {
+	color: #dfdfdf;
+	font-size: 16px;
+	margin:0;
+	padding-top: 26px;
+	padding-left: 14px;
+	
+}
+.project-description-text p:nth-child(2) {
+	color: #878787;
+    font-size: 14px;
+    line-height: 29px;
+    width: 85%;
+    padding-left: 14px;
+    text-align: left;
+
+}
+.project-button a {
+	background-color: #b80505;
+    color: #ffffff;
+    text-decoration: none;
+    width: 123px;
+    height: 15px;
+    margin: 0 auto;
+    padding: 10px 5px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    outline: none;
+    position: absolute;
+    top: 180px;
+    left: 17px;
+}
+.project-description-img {
+	height: 100%;
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+.heading-project:hover {
+	border-bottom-color: #191919;
+	border-top-color: #b80505;
+}
+.heading-project:hover p {
+	color: #b80505;
+}
+/*ovde se zavrsava project element*/
+/*Ovde pocinje chart pie element*/
+.pie-chart-element {
+	width: 100%;
+	height: 680px; 
+	margin: 0;
+	position: relative;
+}
+
+.pie-chart-background {
+	overflow: hidden;	
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.pie-chart-background-opacity {
+	background-color: #191919;
+	opacity: 0.6;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+}
+.pie-chart-box{
+	width: 1100px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -550px;
+	z-index: 1000;
+}
+.pie-chart-box-title {
+	color: #ffffff;
+	width: 100%;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 93px;
+	margin-bottom: 15px;
+}
+.pie-chart-box-text {
+	width: 100%;
+	color: #dbdbdb;
+	font-size: 20px;
+	line-height: 29px;
+	text-align: center;
+}
+.pie-charts {
+	width: 25%;
+	height: 310px;
+    margin-top: 52px;
+    margin-bottom: 80px;
+    float: left;
+}
+.pie-chart-title {
+	font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 175px;
+	
+}
+.pie-chart-text {
+	width: 80%;
+    font-size: 14px;
+    color: #dbdbdb;
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    top: 55%;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+}
+/*ovde se zavrsava pie chart element*/
+
+
+
+
+
+/*ovde pocinje about services element*/
+.element {
+	width: 100%;
+	height: 635px;
+}
+.red-line {
+	width: 100%;
+	height: 9px;
+	background-color: #b80505;
+}
+.services {
+	width: 1100px;
+	height: 635px;
+	margin: 0 auto;
+}
+.services-title {
+	width: 100%;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 101px;
+	margin-bottom: 15px;
+
+}
+.services-text {
+	width: 100%;
+	color: #838383;
+	font-size: 20px;
+	line-height: 21px;
+	text-align: center;
+}
+.services-images {
+	width: 100%;
+	height: 280px;
+	margin-top: 50px;
+	margin-bottom: 62px;
+
+}
+.image-element {
+	width:25%;
+	height: 200px;
+	float: left;	
+}
+.circle {
+	width: 108px;
+	height: 108px;
+	background-color: black;
+	border-radius: 50px;
+	margin: auto;
+}
+.circle img {
+	margin: 15px;
+}
+.circle:hover {
+	background-color: #b80505;	
+}
+/*ovde se zavrsava about services element*/
+/*ovde pocinje gallery element*/
+.image-title {
+	font-size: 20px;
+	color: #191919;
+	font-weight: bold;
+	text-align: center;	
+	margin-top: 32px;
+	margin-bottom: 11px;
+}
+.img-text {
+	    width: 80%;
+    font-size: 14px;
+    color: #373737;
+    line-height: 22px;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.gallery {
+	width: 100%;
+	height: 577px;
+}
+.image {
+
+	position: relative;
+	height: 290px;
+	width: 25%;
+	margin: 0;
+	display: block;
+	float: left;
+	overflow: hidden;
+
+}
+
+.image img{
+	width: 100%;
+    height: 100%;
+}
+.imag-opacity {
+	position: absolute;
+	background-color: black;
+	opacity: 0.7;
+    z-index: 999;
+	height: 100%;
+	width: 100%;
+	transition: opacity 1s;
+}
+.image:hover .imag-opacity {
+	opacity: 0;
+}
+.gallery-description {
+	position: absolute;
+	z-index: 1000;
+	top: 32%;
+    margin: 0 auto;
+    width: 100%;
+	color: #ffffff;
+	text-align: center;
+}
+.gallery-description p:first-child {
+	font-size: 20px;
+	
+	font-weight: bold;
+}
+.gallery-description p:last-child {
+	font-size: 14px;
+	
+}
+.image:hover .gallery-description p {
+	display: none;
+}
+.image a {
+	position: relative;
+    z-index: 1001;
+    background-color: #191919;
+    opacity: 0.9;
+    top: 45%;
+    margin: 0 auto;
+    width: 123px;
+    left: -50%;
+    height: 15px;
+    padding: 10px 5px;
+    line-height: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    display: none;
+    outline: none;
+
+}
+.image:hover a {
+	display:block;
+}
+a:hover {
+	background-color: #b80505;
+}
+.button {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+        left: 50%;
+}
+/*ovde se zavrsava gallery element*/
+/*Ovde pocinje Pricing boxes element*/
+
+.pricing-boxes-element {
+	width: 100%;
+	height: 875px;
+}
+.red-line {
+	width: 100%;
+	height: 9px;
+	background-color: #b80505;
+}
+.pricing-boxes {
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+}
+.pricing-boxes-title {
+	width: 100%;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 101px;
+	margin-bottom: 15px;
+	margin: 0; 
+}
+.pricing-boxes-text {
+	width: 100%;
+	color: #838383;
+	font-size: 20px;
+	line-height: 21px;
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 100px;
+}
+.pricing-boxes-table {
+	position: relative;
+	width: 24.81%;
+	height: 457px;
+	background-color: #191919;
+	opacity: 0.9;
+	border-width: 5px 1px 1px 1px;
+	border-style: solid;
+	border-color: #2a2a2a;
+	letter-spacing: 1px;
+	line-height: 48px;
+	float: left;
+ 
+}
+.pricing-boxes-table p:first-child {
+	font-size: 20px;
+	color: #ffffff;
+	border-bottom: 1px solid #2a2a2a;
+	height: 48px;
+	text-align: center;
+	margin: 0;
+	
+
+}
+.price {
+	font-size: 60px;
+	color: #ffffff;
+	text-align: center;
+	margin:0;
+	border-bottom: 1px solid #2a2a2a;
+
+}
+.price sub {
+	font-size: 13px; 
+	vertical-align: baseline;
+}
+.price sup {
+	font-size: 25px;
+}
+.projects {
+	font-size: 14px;
+	color: #878787;
+	text-align: center;
+	margin: 0;
+	border-bottom: 1px solid #2a2a2a;
+	
+}
+.pricing-boxes-button a {
+    background-color: #b80505;
+    color: #ffffff;
+    text-decoration: none;
+    width: 123px;
+    height: 15px;
+    margin: 0 auto;    
+    padding: 10px 5px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    outline: none;
+    position: absolute;
+    top: 86%;
+    left: 26%;
+}
+
+.pricing-boxes-table:hover {
+	border-color: #b80505 #2a2a2a #2a2a2a #2a2a2a;
+}
+.pricing-boxes-table:hover p:first-child {
+	color: #b80505;
+}
+.pricing-boxes-table:hover .price {
+	color: #b80505;
+}
+/*Ovde se zavrsava Pricinig box element*/
+/*ovde pocinje clients element*/
+.clients-element {
+	height: 180px;
+	width: 100%;
+	background-color: #2a2a2a;
+}
+.clients {
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+}
+.clients-image {
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+/*ovde se zavrsava clients element*/
+/*ovde pocinje footer element*/
+.footer-element {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.imag-footer-opacity {
+	position: absolute;
+	z-index: 999;
+	background-color: #191919;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+}
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 105px;
+	background-color: #191919;
+	z-index: 1000;
+	bottom: 0;
+	left: 0;
+}
+.footer p {
+	color: #6a6a6a;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 32px;
+	margin: 0;
+}
+.footer-button {
+	position: absolute;
+    z-index: 1001;
+    background-color: #b80505;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 49%;
+    border-radius: 50px	
+}
+.footer-text {
+	width: 1100px;
+    height: 100%;    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -550px;
+    z-index: 9999999;
+}
+.footer-text-box {
+	width: 40%;
+    height: 100%;
+    float: left;
+}
+.footer-text-box h3,
+.footer-text-box2 h3 {
+	margin-top: 143px;
+	color: #b80505;
+	font-weight: 400;
+}
+.footer-text-box p {
+	font-size: 14px;
+    color: #dbdbdb;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.footer-text-box span {
+	color: #b80505;
+}
+.footer-text-box p:last-child {
+	margin-top: 45px;
+}
+
+.footer-logo {
+	width: 20%;
+    height: 100%;
+    float: left;
+}
+.footer-text-box2 {
+	width: 40%;
+    height: 100%;
+    float: left;
+    text-align: right;
+}
+.footer-text-box2 p {
+	width: 317px;
+    font-size: 14px;
+    color: #dbdbdb;
+    margin-top: 0px;
+    margin-bottom: 0;
+    text-align: right;
+    float: right;
+    line-height: 2.2;
+}
+.footer-text-box2 p:last-child {
+margin-top: 45px;
+}
+.circle-logo {
+	width: 180px;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 92px;
+    opacity: 0.4;   
+    text-align: center;
+    margin-top: 54px;
+}
+.circle-logo img {
+    margin-top: 40px;
+}
+.social-icons {
+	width: 143px;
+	height: 45px;
+	margin-top: 34px;
+}
+.circle-social-icons {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+.icons {
+	width: 43px;
+	height: 43px;
+	background-color: #191919;
+	border-radius: 50px;
+	margin: left;
+	
+}
+.icons:hover {
+	background-color: #b80505;
+}
+/*ovde se zavrsava footer element*/
